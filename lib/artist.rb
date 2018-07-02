@@ -7,6 +7,8 @@ class Artist
   @@artists = []
   
   extend Memorable::ClassMethods
+  extend Findable 
+  include Paramable 
   
 
   # def self.find_by_name(name)
